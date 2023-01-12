@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>SEL HOME</h2>
+        <div class="Form">
+            <p id="h3">Qeydiyyatsiz davam edin </p> <i class="fa-solid fa-arrow-right-long"></i>
+            <div class="button">
+                <button id="daxilol" class="bgcolor"><b>Daxil ol</b></button>
+                <button id="qeydiyyat"><b>Qeydiyyat</b></button>
+            </div>
+            <div class="signup hidden ">
+                <p>Email ünvanı ilə daxil olun &ensp; ----</p>
+              
+                <div class="parolzad">
+                    <form class="zall" name="myForm1" onsubmit="return validatesign()">
+                        <div class="adsoyad">
+                          <input id="ad" name="ad" type="text" placeholder="Ad">
+                          <p class="box13"></p>
+                            <input id="soyad" name="soyad" type="text" placeholder="Soyad">
+                            <p class="box0"></p>
+                        </div>
+                        <input id="son" name="emails" type="email" placeholder="Email ünvanı">
+                        <p class="box"></p>
+                        <input id="son1" name="sifres" type="password" placeholder="Şifrə">
+                        <p class="box1"></p>
+                        <input id="son2" name="sifres2" type="password" placeholder="Şifrənin düzgünlüyü">
+                        <p class="box2"></p>
+                        <!-- <form id="checkbox"><input type="checkbox">Kampaniyalardan xəbərdar olmaq üçün məlumatalmaq
+                            istəyirik,Qaydalar və şərtlər Qaydalarla razıyam</form> -->
+                        <input id="submit1" class="submitall" type="submit" value="Qeydiyat">
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="login ">
+                <form name="myForm" onsubmit="return validatelogin()">
+                    <input id="son3" name="email" type="email" placeholder="Email ünvanı" value="">
+                    <p class="box3"></p>
+                    <input id="son4" name="sifre" type="password" placeholder="Şifrə">
+                    <p class="box4"></p>
+                    <input id="submit2" class="submitall" type="submit" value="Daxil ol">
+                </form>
+                <a href="">Şifrəni unutdum</a>
+            </div>
+
+            <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
